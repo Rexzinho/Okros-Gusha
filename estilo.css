@@ -13,6 +13,7 @@ body{
 }
 
 h1{
+    width:100%;
     margin-top:30px;
 }
 
@@ -101,4 +102,44 @@ p{
 
 .Calcular:hover{
     cursor:pointer;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .Celular{
+        width:460px;
+    }
+
+    h1{
+        font-size:50px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .Caixa{
+        padding:30px;
+        margin:auto;
+        width:400px;
+        height:150px;
+    }
+
+    .Calcular{
+        font-size:30px;
+        height:60px;
+        width:180px;
+    }
+
+    .Quantidade{
+        height:60px;
+    }
+
+    h3{
+        font-size:25px;
+    }
+
+    p{
+        font-size:25px;
+    }
 }
