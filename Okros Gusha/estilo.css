@@ -1,0 +1,104 @@
+@font-face{
+    font-family:Fonte;
+    src:url(Poppins-SemiBold.ttf);
+}
+
+body{
+    color:rgb(20, 20, 20);
+    font-family:Fonte;
+    text-align:center;
+    padding:0;
+    margin:0;
+    background-color:rgb(90, 199, 80);
+}
+
+h1{
+    margin-top:30px;
+}
+
+p{
+    padding:30px;
+}
+
+.Caixa{
+    margin:auto;
+    width:350px;
+    height:150px;
+}
+
+.Quantidade{
+    border:3px solid black;
+    height:50px;
+    display:flex;
+    background-color:rgb(233, 233, 233)
+}
+
+.Menos{
+    background-color:black;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-right:3px solid black;
+    width:25%;
+}
+
+.ValorQuantidade{
+    font-size:large;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:50%;
+}
+
+.ValorResultado{
+    width:100%;
+}
+
+.Mais{
+    background-color:black;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-left:3px solid black;
+    width:25%;
+}
+
+.Sinal{
+    color:white;
+    background-color:black;
+    height: 100%;
+    width:100%;
+    font-size:30px;
+    border:none;
+    transition:0.2s;
+}
+
+.Sinal:active{
+    scale:0.5;
+}
+
+.Sinal:hover{
+    cursor:pointer;
+}
+
+.Calcular{
+    transition:0.2s;
+    border:none;
+    color:white;
+    background-color:black;
+    margin-top:30px;
+    margin-bottom:20px;
+    height: 50px;
+    width:100px;
+    font-size:15px;
+    border-left:3px solid black;
+    font-family:Fonte;
+}
+
+.Calcular:active{
+    scale:0.8;
+}
+
+.Calcular:hover{
+    cursor:pointer;
+}

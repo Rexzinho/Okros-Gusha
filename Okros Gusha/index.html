@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Okros Gusha</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1>Okros Gusha - <span style="color:rgb(114, 10, 31)">Ataque Especial</span></h1>
+        <br>
+        <div class="Caixa">
+            <h2>Socos Acertados</h2>
+            <div class="Quantidade">
+                <div class="Menos">
+                    <button class="Sinal" onclick="socosFunction(+1)">-</button>
+                </div>
+                <div class="ValorQuantidade">
+                    <h3 id="Socos"></h3>
+                </div>
+                <div class="Mais">
+                    <button class="Sinal" onclick="socosFunction(-1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Caixa">
+            <h2>Dano Soco(d)</h2>
+            <div class="Quantidade">
+                <div class="Menos">
+                    <button class="Sinal" onclick="socoFunction(+1)">-</button>
+                </div>
+                <div class="ValorQuantidade">
+                    <h3 id="Soco"></h3>
+                </div>
+                <div class="Mais">
+                    <button class="Sinal" onclick="socoFunction(-1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Caixa">
+            <h2>Dano Eletrico(d)</h2>
+            <div class="Quantidade">
+                <div class="Menos">
+                    <button class="Sinal" onclick="eletricoFunction(+1)">-</button>
+                </div>
+                <div class="ValorQuantidade">
+                    <h3 id="Eletrico"></h3>
+                </div>
+                <div class="Mais">
+                    <button class="Sinal" onclick="eletricoFunction(-1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Caixa">
+            <h2>Forca</h2>
+            <div class="Quantidade">
+                <div class="Menos">
+                    <button class="Sinal" onclick="forcaFunction(+1)">-</button>
+                </div>
+                <div class="ValorQuantidade">
+                    <h3 id="Forca"></h3>
+                </div>
+                <div class="Mais">
+                    <button class="Sinal" onclick="forcaFunction(-1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="Calcular"  onclick="setTimeout(calcular, 7300), som()">Calcular</button>
+
+        <div class="Caixa">
+            <div class="Quantidade">
+                <div class="ValorQuantidade ValorResultado">
+                    <h3 id="Resultado"></h3>
+                </div>
+            </div>
+        </div>
+        <p>Neste ataque especial, Okros desfere uma sequência de 20 socos contra o inimigo. Nem todos ele acerta, mas quando ele acerta, cada soco dará 1d12 (soco inglês) + 1d6 (dano elétrico) + 9 (força) de dano no inimigo.</p>
+
+    <script src="script.js"></script>
+    </body>
+</html>
